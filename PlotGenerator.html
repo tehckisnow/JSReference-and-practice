@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>THE TITULAR TITLE</title>
+        <script>
+            //wordlists
+                var noun = ["people", "way", "world", "map", "family", "health", "computer", "year", "music", "reading", "data", "understanding", "law", "literature", "software", "knowledge", "ability", "love", "television", "library", "fact", "idea", "investment", "society", "story", "media", "oven", "definition", "quality", "language", "player", "video", "security", "exam", "organization", "physics", "policy", "thought", "boyfriend", "strategy", "army", "freedom", "environment", "instance", "truth", "university", "article", "difference", "news", "fishing", "income", "user", "failure", "medicine", "teacher", "night", "disease", "energy", "road", "soup", "location", "addition", "education", "moment", "politics", "decision", "property", "student", "competition", "entertainment", "population", "unit", "cigarette", "introduction", "performance", "flight", "magazine", "relationship", "cell", "finding", "member", "phone", "appearance", "concept", "death", "housing", "insurance", "woman", "blood", "expression", "opinion", "reality", "situation", "statement", "application", "county", "estate", "grandmother", "perspective", "recipe", "topic", "depression", "passion", "resource", "ad", "college", "criticism", "description", "patience", "solution", "aspect", "director", "psychology", "response", "storage", "alcohol", "complaint", "emphasis", "loss", "possession", "steak", "agreement", "currency", "engineering", "interaction", "preference", "republic", "virus", "classroom", "device", "drama", "engine", "guidance", "owner", "protection", "tension", "anxiety", "awareness", "bread", "climate", "confusion", "elevator", "employee", "guest", "leadership", "manager", "recording", "transportation", "cousin", "editor", "excitement", "feedback", "homework", "mom", "permission", "promotion", "refrigerator", "revenue", "singer", "basket", "cabinet", "church", "coffee", "drawing", "hearing", "judgment", "measurement", "mud", "poetry", "possibility", "queen", "relation", "satisfaction", "signature", "song", "town", "volume", "accident", "appointment", "assumption", "chapter", "conversation", "enthusiasm", "explanation", "gate", "hall", "hospital", "instruction", "manufacturer", "perception", "poem", "proposal", "replacement", "river", "speech", "village", "winner", "writer", "breath", "chest", "conclusion", "cookie", "dad", "drawer", "examination", "grocery", "impression", "independence", "inspection", "king", "menu", "piano", "profession", "quantity", "requirement", "sister", "tongue", "wedding", "ambition", "apple", "assistant", "bedroom", "birthday", "championship", "client", "departure", "dirt", "fortune", "funeral", "girlfriend", "indication", "lady", "negotiation", "passenger", "platform", "pollution", "reputation", "sir", "stranger", "sympathy", "throat", "uncle", "time", "film", "money", "while", "study", "life", "air", "place", "part", "fish", "process", "hand", "job", "end", "type", "economy", "body", "guide", "state", "course", "price", "card", "mind", "line", "group", "word", "force", "light", "name", "top", "level", "practice", "sense", "piece", "boss", "fun", "page", "test", "sound", "matter", "soil", "oil", "access", "range", "reason", "site", "exercise", "case", "coast", "age", "boat", "result", "building", "cash", "nothing", "plan", "tax", "subject", "rule", "weather", "figure", "model", "beginning", "program", "design", "head", "purpose", "rock", "act", "car", "object", "sun", "profit", "speed", "war", "craft", "inside", "standard", "exchange", "fire", "pressure", "advantage", "box", "issue", "cycle", "item", "paint", "room", "structure", "account", "discipline", "share", "bit", "bottom", "gift", "machine", "tool", "address", "career", "morning", "sign", "task", "contact", "egg", "ice", "north", "attempt", "effect", "post", "voice", "challenge", "self", "brush", "debate", "front", "lack", "plant", "spot", "taste", "track", "brain", "click", "foot", "influence", "rain", "base", "distance", "pair", "staff", "target", "animal", "budget", "file", "lesson", "officer", "reference", "sky", "stick", "trouble", "bridge", "character", "edge", "fan", "lock", "novel", "pack", "plenty", "skin", "weight", "background", "dish", "fruit", "joint", "muscle", "strength", "trip", "appeal", "gear", "kitchen", "log", "net", "principle", "sale", "signal", "street", "wave", "bench", "copy", "minimum", "progress", "sea", "status", "ticket", "angle", "breakfast", "daughter", "doctor", "dream", "essay", "fee", "hour", "limit", "milk", "peace", "seat", "storm", "team", "afternoon", "beach", "catch", "consideration", "crew", "gold", "kid", "match", "pain", "score", "sex", "shower", "tone", "agent", "block", "calendar", "coat", "corner", "cup", "door", "finger", "guarantee", "hook", "layer", "lie", "meeting", "parking", "profile", "rice", "schedule", "telephone", "winter", "bag", "bed", "bother", "code", "designer", "dress", "emergency", "extension", "fight", "grade", "horror", "host", "loan", "mountain", "noise", "package", "pause", "proof", "relief", "sentence", "smoke", "string", "towel", "west", "wine", "aside", "bet", "border", "breast", "buddy", "chip", "cross", "draft", "expert", "god", "habit", "judge", "landscape", "mail", "native", "parent", "pin", "pound", "salary", "shelter", "silver", "tank", "assist", "bar", "bike", "boy", "chair", "clue", "comment", "devil", "fear", "glove", "lunch", "mortgage", "pace", "peak", "reward", "sandwich", "spite", "surprise", "transition", "welcome", "alarm", "bicycle", "blind", "cable", "clerk", "concert", "flower", "harm", "lawyer", "load", "neck", "plate", "ruin", "skirt", "snow", "stroke", "trash", "zone", "award", "bitter", "bug", "candy", "cat", "channel", "comfort", "crack", "entrance", "grass", "hell", "incident", "joke", "leg", "mate", "nerve", "pen", "priest", "promise", "resort", "roof", "sail", "script", "station", "tower", "witness", "you", "can", "if", "many", "other", "make", "look", "go", "being", "might", "public", "keep", "give", "local", "she", "long", "feel", "tonight", "common", "change", "past", "possible", "today", "personal", "national", "natural", "show", "check", "call", "pay", "increase", "individual", "ask", "guard", "main", "potential", "international", "cook", "following", "working", "dance", "cold", "low", "deal", "worth", "necessary", "produce", "present", "talk", "tell", "drive", "support", "remove", "run", "due", "middle", "reserve", "leave", "reach", "serve", "beautiful", "active", "negative", "stay", "visual", "cover", "rise", "white", "junior", "unique", "classic", "lift", "private", "teach", "concern", "fly", "broad", "gain", "rich", "stand", "fail", "hello", "listen", "worry", "leading", "release", "finish", "press", "secret", "spring", "wait", "deep", "flow", "objective", "touch", "chemical", "dump", "push", "eat", "formal", "kick", "pass", "remote", "treat", "abuse", "burn", "print", "sleep", "advance", "consist", "double", "equal", "hire", "join", "sensitive", "win", "claim", "drag", "guess", "pull", "soft", "wear", "wonder", "count", "doubt", "forever", "nobody", "round", "slide", "whereas", "combine", "dig", "equivalent", "hunt", "march", "smell", "survey", "adult", "crazy", "gather", "prior", "rough", "scratch", "strike", "external", "illegal", "lay", "nasty", "respond", "senior", "strain", "swim", "upper", "yellow", "crash", "fold", "grab", "miss", "quote", "resolve", "sink", "spare", "sweet", "twist", "usual", "brave", "concentrate", "grand", "mine", "quiet", "regret", "rush", "shift", "steal", "surround", "bear", "dare", "delay", "female", "inevitable", "kiss", "pop", "quit", "representative", "rip", "silly", "spell", "stupid", "temporary", "wake", "yesterday"];
+                var adjective = ["adorable", "adventurous", "agreeable", "alive", "angry", "annoying", "arrogant", "attractive", "awful", "beautiful", "bewildered", "bloody", "blue-eyed", "bored", "brave", "bright", "calm", "cautious", "cheerful", "clear", "cloudy", "colorful", "comfortable", "condemned", "cooperative", "crazy", "crowded", "curious", "dangerous", "dead", "defiant", "depressed", "different", "disgusted", "disturbed", "doubtful", "dull", "easy", "elegant", "enchanting", "energetic", "envious", "excited", "exuberant", "faithful", "fancy", "fierce", "fine", "fragile", "frantic", "frightened", "gentle", "glamorous", "glorious", "gorgeous", "grieving", "grumpy", "happy", "helpful", "hilarious", "homely", "hungry", "ill", "impossible", "innocent", "itchy", "jittery", "joyous", "lazy", "lively", "long", "lucky", "misty", "motionless", "mushy", "nasty", "nervous", "nutty", "obnoxious", "old-fashioned", "outrageous", "panicky", "plain", "poised", "powerful", "prickly", "puzzled", "real", "repulsive", "scary", "shiny", "silly", "smiling", "sore", "splendid", "stormy", "stupid", "super", "tame", "tense", "testy", "thoughtful", "tired", "troubled", "ugly", "unsightly", "upset", "vast", "vivacious", "weary", "wide-eyed", "witty", "worried", "zany"];
+                var verb = ["be", "beat", "become", "begin", "bend", "bet", "bid", "bite", "blow", "break", "bring", "build", "burn", "buy", "catch", "choose", "come", "cost", "cut", "dig", "dive", "do", "draw", "dream", "drive", "drink", "eat", "fall", "feel", "fight", "find", "fly", "forget", "forgive", "freeze", "get", "give", "go", "grow", "hang", "have", "hear", "hide", "hit", "hold", "hurt", "keep", "know", "lay", "lead", "leave", "lend", "let", "lie", "lose", "make", "mean", "meet", "pay", "put", "read", "ride", "ring", "rise", "run", "say", "see", "sell", "send", "show", "shut", "sing", "sit", "sleep", "speak", "spend", "stand", "swim", "take", "teach", "tear", "tell", "think", "throw", "understand", "wake", "wear", "win", "write", "wrote", "written"];
+                var preposition = ["aboard", "about", "across", "against", "amid", "around", "at", "behind", "beneath", "between", "but", "concerning", "despite", "during", "following", "from", "inside", "like", "near", "of", "on", "opposite", "outside", "past", "plus", "round", "since", "through", "toward", "underneath", "until", "upon", "via", "within", "without"];
+                var adverb = ["abnormally", "absentmindedly", "acidly", "adventurously", "almost", "angrily", "anxiously", "awkwardly", "bashfully", "bitterly", "blindly", "boastfully", "bravely", "brightly", "broadly", "calmly", "carelessly", "certainly", "clearly", "closely", "colorfully", "continually", "correctly", "crossly", "curiously", "daintily", "deceivingly", "deeply", "deliberately", "diligently", "doubtfully", "easily", "energetically", "enthusiastically", "especially", "evenly", "exactly", "extremely", "faithfully", "far", "fatally", "fervently", "fondly", "fortunately", "frantically", "frenetically", "fully", "generally", "gently", "gleefully", "gratefully", "greedily", "hastily", "heavily", "helplessly", "honestly", "hourly", "immediately", "inquisitively", "intensely", "interestingly", "irritably", "jealously", "joyfully", "jovially", "judgementally", "keenly", "kindheartedly", "kissingly", "knottily", "knowledgeably", "lazily", "lightly", "limply", "loftily", "loosely", "loudly", "madly", "meaningfully", "merrily", "mockingly", "more", "mostly", "naturally", "neatly", "nervously", "nicely", "not", "obnoxiously", "offensively", "often", "openly", "overconfidently", "painfully", "patiently", "physically", "politely", "positively", "powerfully", "properly", "quaintly", "queasily", "questionably", "quicker", "quietly", "quizzically", "rarely", "really", "recklessly", "reluctantly", "reproachfully", "righteously", "rigidly", "rudely", "safely", "scarily", "sedately", "seldom", "separately", "shakily", "sheepishly", "shyly", "sleepily", "smoothly", "solemnly", "sometimes", "speedily", "sternly", "successfully", "surprisingly", "sweetly", "sympathetically", "tensely", "thankfully", "thoughtfully", "tomorrow", "tremendously", "truly", "ultimately", "unaccountably", "unethically", "unfortunately", "unnaturally", "utterly", "upliftingly", "upside-down", "upwardly", "usefully", "usually", "vacantly", "vainly", "vastly", "very", "victoriously", "vivaciously", "warmly", "wearily", "wetly", "wildly", "wisely", "wonderfully", "wrongly", "yearly", "yesterday", "youthfully", "zestfully"];
+                var theme = ["Beauty of simplicity", "Capitalism's effect on the individual", "Change of power – necessity", "Change versus tradition", "Chaos and order", "Character – destruction, building up", "Circle of life", "Coming of age", "Communication – verbal and nonverbal", "Companionship as salvation", "Convention and rebellion", "Dangers of ignorance", "Darkness and light", "Death – inevitable or tragedy", "Desire to escape", "Destruction of beauty", "Disillusionment and dreams", "Displacement", "Empowerment", "Emptiness of attaining false dream", "Everlasting love", "Evils of racism", "Facing darkness", "Facing reality", "Fading beauty", "Faith versus doubt", "Family – blessing or curse", "Fate and free will", "Fear of failure", "Female roles", "Fulfillment", "Good versus bad", "Greed as downfall", "Growing up – pain or pleasure", "Hazards of passing judgment", "Heartbreak of betrayal", "Heroism – real and perceived", "Hierarchy in nature", "Identity crisis", "Illusion of power", "Immortality", "Individual versus society", "Inner versus outer strength", "Injustice", "Isolation", "Isolationism – hazards", "Knowledge versus ignorance", "Loneliness as destructive force", "Losing hope", "Loss of innocence", "Lost honor", "Lost love", "Love and sacrifice", "Man against nature", "Manipulation", "Materialism as downfall", "Motherhood", "Names – power and significance", "Nationalism – complications", "Nature as beauty", "Necessity of work", "Oppression of women", "Optimism – power or folly", "Overcoming – fear, weakness, vice", "Patriotism – positive side or complications", "Power and corruption", "Power of silence", "Power of tradition", "Power of wealth", "Power of words", "Pride and downfall", "Progress – real or illusion", "Quest for discovery", "Quest for power", "Rebirth", "Reunion", "Role of men", "Role of Religion – virtue or hypocrisy", "Role of women", "Self – inner and outer", "Self-awareness", "Self-preservation", "Self-reliance", "Social mobility", "Technology in society – good or bad", "Temporary nature of physical beauty", "Temptation and destruction", "Totalitarianism", "Vanity as downfall", "Vulnerability of the meek", "Vulnerability of the strong", "War – glory, necessity, pain, tragedy", "Will to survive", "Wisdom of experience", "Working class struggles", "Youth and beauty", "Movies", "Abuse of power", "Arrogance", "Art", "Autonomy", "Beating the odds", "Beauty", "Beliefs", "Betrayal", "Bible", "Bravery", "Celebration", "Chance", "Change", "Chaos and order", "Children", "Circle of life", "Coming of age", "Common sense", "Conservation", "Conspiracy", "Creation", "Crime", "Courage", "Darkness and lightness", "Death", "Dedication", "Democracy", "Desire to escape", "Despair", "Disillusionment", "Economics", "Effects from the past", "Empowerment", "Everlasting love", "Evils by humanity", "Facing reality", "Failure", "Family", "Fate", "Fear", "Feminism", "Freedom", "Friendship", "Future", "Gay, Lesbian, Bisexual, and Transgender rights", "God", "Good vs Evil", "Government", "Greed", "Growing Up", "Happiness", "Hate", "Heritage", "Hero", "Heroism", "Hope", "Humor", "Human Nature", "Identity", "Ideology", "Ignorance", "Illusion of power", "Individuality", "Inner peace", "Innocence", "Isolation", "Jealousy", "Justice", "Kindness", "Knowledge", "Law", "Leadership", "Liberty", "Life", "Logic", "Losing hope", "Loss of innocence", "Lost love", "Love and sacrifice", "Loyalty", "Man vs nature", "Man vs man", "Man vs self", "Man vs machine", "Mankind", "Maturity", "Medicine", "Mercy", "Morality", "Nationalism", "Nature", "Necessity", "Optimism", "Neglect", "Normality", "Opportunity", "Optimism", "Overcoming", "Passion", "Patience", "Patriotism", "Peace", "Perfection", "Peer pressure", "Perseverance", "Power and corruption", "Prejudice", "Pride", "Progress", "Purpose", "Quests", "Race", "Reality", "Redemption", "Regret", "Religion", "Resistance", "Reunion", "Revolution", "Revenge", "Sanity", "Secrecy", "Segregation", "Self-awareness", "Self-discipline", "Simplicity", "Society", "Social Construct", "Solitude", "Soul", "Suicide", "Survival", "Technology", "Temptation", "Time", "Tolerance", "Travel", "Trust", "Truth", "Universe", "Unselfishness", "Valor", "Vices", "Violence", "Virtue", "War", "Waste", "Wealth", "Wisdom", "Willpower", "Winning and losing", "Xenophobia", "Youth", "Poetry", "Adversity", "Aging", "America", "Angels", "Beauty", "Birds", "Change", "Childhood", "Comfort after death", "Courage", "Death", "Deception", "Destiny", "Dying", "Depression", "Dreams", "Dying", "Earth", "Emotions", "Encouraging", "Faith", "Fame", "Fate", "Fear", "Flowers", "Forgiveness", "Freedom", "Friendship", "Funerals", "God", "Gratitude", "Grief", "Happiness", "Hate", "Heartbreak", "Heaven", "Hope", "Humility", "Identity", "Imagination", "Impossibility", "Innocence", "Inner Peace", "Inspiration", "Jealousy", "Joy", "Justice", "Knowledge", "Life", "Life – purpose of", "Love", "Marriage", "Memories", "Mountains", "Mourning", "Music", "Nature", "New Year", "Not Giving Up", "Oneness", "Opportunity", "Overcoming", "Pain", "Patience", "Peace", "Prayer", "Regret", "Revenge", "Roses", "Sadness", "Simplicity", "Sin", "Soul", "Stars", "Suffering", "Sympathy", "Time", "Trees", "Trust", "Unconditional love", "War", "Work"];
+                var characterList = ["no one"]; //0=noone, 1=protag, 2=antag
+
+                var n = "n"; //shortcut for "noun"
+                var a = "a"; //adjective
+                var v = "v"; //verb
+                var av = "av"; //adverb
+                var p = "p"; //preposition
+                var t = "t"; //theme
+            //run when button is clicked
+            function generate() {                
+                //choose format
+                var insertText = genHollywoodStyle();
+                //pass the string to the text setter
+                //setText("test", characterList);
+                setText("generatedText", insertText);
+                //reset character list for next use
+                characterList = ["no one"];
+            }   
+            //insert word selections into format
+            function genHollywoodStyle() {
+                var hollywoodResult = `[Weirdness element: consider incorporating below if it makes sense(or maybe even if it doesn't!):
+                <br \>=${weirdnessGenerator()}]<br \>
+                <br \>The central theme has to do with ${word(t)} and ${word(t)}.<br \>
+                <br \>The protagonist, ${nameRND()}, is a ${word(a)} ${word(n)} 
+                that is ${word(av)} ${word(a)}, ${word(av)} ${word(a)}, and ${word(av)} ${word(a)}.<br \>
+                Their goal is to ${word(av)} ${word(v)} ${word(p)} ${word(n)}.
+                <br \><br \>
+                The antagonist, ${nameRND()}, is a ${word(a)} ${word(n)} 
+                that is ${word(av)} ${word(a)}, ${word(av)} ${word(a)}, and ${word(av)} ${word(a)}.<br \>
+                Their goal is to ${word(av)} ${word(v)} ${word(p)} ${word(n)}.<br \>
+                <br \>
+                The support character, ${nameRND()}, is a ${word(a)} ${word(n)} 
+                that is ${word(av)} ${word(a)}, ${word(av)} ${word(a)}, and ${word(av)} ${word(a)}.<br \>
+                Their goal is to ${word(av)} ${word(v)} ${word(p)} ${word(n)}.<br \>
+                <br \>${characterList[3]} teaches ${characterList[1]} about ${word(a)} ${word(t)} by means of 
+                ${word(av)} ${word(v)}, which allows ${characterList[1]} to overcome ${characterList[2]} by means of ${word(av)} ${word(v)}.<br \>
+                <br \>In the first act, ${characterList[roll(characterList.length)]} ${word(av)} ${word(v)}.
+                <br \>In the second act, ${characterList[roll(characterList.length)]} ${word(av)} ${word(v)}.
+                <br \>In the third act, ${characterList[roll(characterList.length)]} ${word(av)} ${word(v)}.<br \>
+                <br \>The climax features ${characterList[roll(characterList.length)]} ${word(av)} ${word(v)} 
+                ${characterList[roll(characterList.length)]} and ${word(v)} ${word(n)}.`; 
+                return hollywoodResult;
+            }        
+            //rng
+            function roll(range) {
+                topRange = range;
+                rollResult = Math.floor(Math.random() * topRange);
+                return rollResult;
+            }
+            // call roll and select random index from the correct word list
+            function word(request) {
+                r = request;
+                if (r == "n") {
+                    return noun[roll(noun.length)];
+                } else if (r == "a") {
+                    return adjective[roll(adjective.length)];
+                } else if (r == "v") {
+                    return verb[roll(verb.length)];
+                } else if (r == "av") {
+                    return adverb[roll(adverb.length)];
+                } else if (r == "p") {
+                    return preposition[roll(preposition.length)];
+                } else if (r == "t") {
+                    return theme[roll(theme.length)];
+                } else if (r == "wt") {
+                    return weirdThing[roll(weirdThing.length)];
+                }
+            }
+            function nameRND() {
+                var name = "";
+                var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+                var vowels = ["a", "e", "i", "o", "u"];
+                var consonents = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"];
+                var chooseLetter = [alphabet, alphabet, vowels, vowels, consonents];
+                var nameLength = roll(4) + 3;
+                for (; nameLength > 0; nameLength--) {
+                    //name += alphabet[roll(25)];
+                    var letter = chooseLetter[roll(chooseLetter.length)];
+                    name += letter[roll(letter.length)];
+                }
+                characterList[characterList.length] = name;
+                return name;
+            }
+            function weirdnessGenerator() {
+                var weird = "";
+                var greek = ["amphi, ambi", "archos", "auto", "caco", "credo", "demos", "domina", 
+            "ideo", "locus", "act", "aero", "agr", "alter", "anim", "ann", "enn", "aqua", "ast", "aud", 
+            "biblio", "bio", "card", "cord", "chron", "claim", "clam", "cogn", "corp", "cosm", "cred", "cycl", "dic", 
+            "doc", "don", "donat", "duc", "fac", "fic", "flect", "flex", "form", "gen", "geo", "gram", 
+            "graph", "homo, hom", "inner", "inter", "intro", "junct", "jud", "jur", "jus", "lab", "liber", 
+            "loc", "man", "mar", "mater", "matr", "meter", "migr", "miss", "mit", "mob", "mot", "mov", 
+            "morph", "mort", "nat", "ordin, order", "ortho", "pater, patr", "path", "ped", "ped", "phil", 
+            "phon", "photo", "pod", "poli", "port", "pysch", "ques, quer, quis", "rad", "rect", "rupt", 
+            "san", "saur", "sci", "scop", "scribe", "script", "sign", "spec", "struct", "tact", "terr", 
+            "therm", "tract", "trib", "urb", "vac", "var", "vid", "vis", "voc", "void", "vol", "volv"];
+                var tech = ["hermeneutics", "quantum", "neutron", "gravitational", "wormhole", 
+            "flux", "relativity", "protocol", "spatio", "temporal", "polarity", "techno", "intellignt", 
+            "molecule", "transdimensional", "lock", "sync", "electrolytic", "localized", "corrosive", "amalgamation", "asynchronous",
+            "mecha", "alloy", "atomic", "super", "automaton", "neural", "generator",
+            "electro", "magnetic", "plasma", "gaseaus", "fire", "frozen", "tangential", "biological", 
+            "sub", "barrier", "technical", "penetration", "machine", "engine", "energy", "matter", "material", 
+            "computer", "bio-computer", "electronics", "biological", "warp", "physics", "psychology", 
+            "analysis", "calculate", "orbital", "quasi", "space-time", "space", "spherical", "hyper-dimensional",
+            "tests", "upgrade", "consciousness", "automatic", "reality", "fluid", "field", "attraction", "mathmatics",
+            "subversion", "capacitor", "insulator", "emitter", "disable", "xeno", "navigation", "vector", "robotic",
+            "conceptual", "hypothetical", "theorem", "robotics", "sentience", "weapon",
+            "genetic", "replicate", "ionic", "stablize", "hydro", "ambient", "entropic", "chemical", "engineered", 
+            "kinetic", "potential", "singularity", "the end of time", "entropy", "consciousness", "emotion", "automation"];
+                var magic = ["spiritual", "gnostic", "oversoul", "transcend", "thaumaturgy", 
+            "magical", "dreamstate", "memetic", "ghostly", "ego barrier", "magi", "Wand", "Wicca", "Witchcraft", "Veve", 
+            "Vodun", "Talisman", "Tantra", "Tarot divination", "Thaumaturgy", "Thelema", "Thelemic mysticism", 
+            "Theosophy", "Therianthropy", "Theurgy", "Trance", "Transfiguration", "Transmutation", "True Will", "Typhonian", "Sacrifice", 
+            "Santería", "Satan", "Satanism", "Scrying", "Séance", "Secret Chiefs", "Seidr", "Seven Rays", "Servitor (chaos magic)", 
+            "Sex magic", "Shamanism", "Sigil", "Spell", "Stregheria", "Synchromysticism", "Reality hacking", "Reiki", "Reincarnation", 
+            "Resurrection", "Rhabdomancy", "Ritual", "Rosicrucianism", "Runecasting", "	Qabalah", "	Qi", "	Quantum mysticism", "Paganism", 
+            "Palmistry", "Pentacle", "Penuel", "Planetary hours", "Power Animal", "Pow-wow (folk magic)", "Psionics", "Psychic", 
+            "Psychonautics", "Pyramid power", "Obeah", "Obeah and Wanga", "Occultism", "Omen", "Oracle", "Ouija", "Nagual", "Necromancy", 
+            "Necronomicon", "Neodruidism", "Neopaganism", "Neoplatonism", "Neotantra", "Nephilim", "New Age", "New Thought", "Nosferatu", 
+            "Numerology", "Magic (paranormal)", "Magic circle", "Magic word", "Magical formula", "Magick (Thelema)", 
+            "Maleficium (sorcery)", "Mediumship", "Merkabah mysticism", "Mesmerism", "Methods of divination", "Mojo", 
+            "Mystery religion", "Mysticism", "Myth and ritual", "Law of contagion", "Left-hand path", "right-hand path", "Legendary creature", 
+            "Lesser ritual of the pentagram", "Literomancy", "Lithomancy", "Louisiana Voodoo", 
+            "Lucifer", "Kabbalah", "Kemetism", "Kia (magic)", "Kundalini energy", "I Ching", "Initiation", "Incantation", "Invocation", 
+            "juju	", "Haruspex", "Hermeticism", "Hexagram", "Hex", "Holy Guardian Angel", "Homunculus", "Hoodoo", 
+             "Human sacrifice", "Gematria", "Geomancy", "Geomantic figures", "Gnosis", "Gnosis (chaos magic)", "Goetia", 
+            "Gray magic", "Greater and lesser magic", "Grimoire", "Fama Fraternitatis", "Familiar spirit", "Folk Magic", 
+            "Fortune-telling", "Ectoplasm", "Eight-circuit model of consciousness", "Elemental", "Enchanting", "Enochian", "E.S.P.", 
+            "Esoteric Christianity", "Esoteric cosmology", "Esotericism", "Evocation", "Exorcism", "Demonology", 
+            "Divination", "Dowsing", "Druid", "Cartomancy", "Ceremonial magic", "Chalice", "Chaos magic", 
+            "Charmstone", "Clairaudience", "Clairsentience", "Clairvoyance", "second-sight", "Classical element", 
+            "Cleromancy", "Collective unconscious", "Cone of power", "Conjuration", "Coven", 
+            "Crystals", "Crystal gazing", "Curse", "Curse tablet", "Banishing", "Baphomet", "Bibliomancy", "Biosophy", "Black magic", 
+            "Black Sun", "Body of light", "Abbey of Thelema", "Acupuncture", "Adept", "Aether", 
+            "Akashic Records", "Alchemy", "Alphabet of Desire", "Ankh", "Animism", "Amulet", "Anthroposophy", "Apparitions", 
+            "Argenteum Astrum", "Ariosophy", "Ascended master", "Astral projection", "Astrological age", 
+            "Astrology", "Astrology and alchemy", "Astrology and the classical elements", "Astrology and numerology", "Aura", 
+            "Augury (interpreting omens)"];
+                var lists = [greek, tech, magic];
+                var num = roll(3) + 1;
+                while (num > 0) {
+                    list = lists[roll(lists.length)];
+                    weird += list[roll(list.length)];
+                    list = lists[roll(lists.length)];
+                    weird += list[roll(list.length)];
+                    weird += " ";
+                    num--;
+                }
+                return weird;
+            }
+            //sets text element to the given text
+            function setText(id, text) {
+                newId = id;
+                newText = text;
+                document.getElementById(newId).innerHTML = newText;
+            }            
+        </script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+    <h1>STORY GENERATION</h1>
+        <p>Click the button below to generate a new plot.</p>
+        <button type="button" onclick="generate()">generate</button>
+        <p id="test"></p>
+        <p id="generatedText"></p>
+    </body>
+</html>

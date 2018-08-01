@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fantasy Genesis</title>
+        <script> 
+            //anima
+            var sealife = ["Mollusk", "crab, lobster", "squid. mudskipper", "fish - deep sea", "jellyfish, octopus", "fish - freshwater", "whale, dolphin", "shell", "eel, leech", "coral, anemone", "shark, ray"];
+            var insect = ["worm", "ant", "mosquito", "moth, butterfly", "fly, dragonfly", "lotus, mantis", "bee, wasp", "caterpillar", "beetle, scarab", "flea, mite", "spider"];
+            var mammal_a = ["sheep, cow", "mouse, rabbit", "pig, boar", "deer, pronghorn", "ram, bull, buck", "elephant, giraffe"];
+            var reptile = ["crocodile, gila", "frog, newt", "lizard, snake", "turtle"];
+            var bird = ["wild fowl, duck", "farm fowl, rooster", "seabird, penguin", "city-raven, sparrow", "tropical-parrot, heron", "bird of prey-hawk, owl"];
+            var mammal_b = ["bat", "bear", "lupine- wild dog", "horse, zebra", "feline-wild cat", "primate"];
+            var anima = [sealife, insect, mammal_a, reptile, bird, mammal_b];
+            var animaName = ["sealife", "insect", "mammal_a", "reptile", "bird", "mammal_b"];
+            //veggie
+            var plant = ["seaweed", "fern", "desert cacti", "thick leaf-jade", "flower-domestic", "vine", "poppy", "grass-dandelion", "bamboo", "flower-wild", "carnivorous"];
+            var fruitveg = ["asparagus", "pinecone", "berry, grapes", "ginger", "tree fruit(apple, orange)", "bean", "pumpkin, gourd", "broccoli, artichoke", "corn", "grain, wheat", "pineapple"];
+            var fungi = ["moss", "ooze, jellu", "lichen", "mushroom"];
+            var tree = ["willow", "birch", "maple, oak", "banyan", "pine", "palm"];
+            var veggie = [plant, fruitveg, fungi, tree];
+            var veggieName = ["plant", "fruitveg", "fungi", "tree"];
+            //element
+            var fire = ["fire, vapor", "electric bolt", "ember, hot coal", "molten lava"];
+            var liquid = ["icicles", "fog, vapor", "wave", "dew drops", "ripple", "frost, snow", "suds, bubbles", "tar, gum"];
+            var earth = ["malachite", "mountain, cliff face", "brick, cobblestone", "rust, oxide", "cracked clay", "stalactite, stalagmite", "glass, crystals", "powder, sand", "slate, shale", "cement, sediment", "mercury, chrome"];
+            var astral = ["moon cycles", "starfield", "crater, asteroid", "solar flare", "galaxy form", "volcano", "planets, saturn's rings", "cloud, cyclone"];
+            var element = [fire, liquid, earth, astral];
+            var elementName = ["fire", "liquid", "earth", "astral"];
+            //techne
+            var transportation = ["car, truck, bus", "aircraft", "rail, train, trolley", "cycle", "sled, ski", "boat, ship", "spacecraft", "tank tread"];
+            var architecture = ["ornament, gargoyle", "bridge, framework", "castle, domed", "ornament, pillar", "modern skyscraper", "place of worship, totem", "doorway, archway", "old village, cottage"];
+            var tool_a = ["drill", "cups, plates", "umbrella", "bundle, bale", "hammer, axe", "brush- hair, tooth", "razor, knife", "spigot, faucet", "rope", "silverware", "lock, key"];
+            var machine_a = ["switch, dial, button", "turbine", "bulb, lamp", "clock, gears", "fan, propeller", "saw"];
+            var tool_b = ["adhesive, bandage", "shovel, pick", "capsule, tablet", "nuts, bolts", "chain", "thread, stitch", "shears, scissors", "pen, paintbrush", "spring, coil", "syringe", "tube, plumbing"];
+            var machine_b = ["reactor core", "telephone", "solar panel", "engine", "laser beam", "microchip", "dish antenna", "rocket"];
+            var techne = [transportation, architecture, tool_a, machine_a, tool_b, machine_b];
+            var techneName = ["transportation", "architecture", "tool_a", "machine_a", "tool_b", "machine_b"];
+
+            var emotactlists = [["embarrassed", "anger", "timid, bashful", "giggling, smiling", "squint, wink", "bored", "stressed, fatigued", "fear", "thought, meditation", "deadpan", "insane, berserker", "insane, happy", "pining, furrowed", "laughing, hysterical", "attentive, shock", "stern, grumpy", "clenched teeth", "gape, gawk", "relief", "sneering", "paranoid, shifty", "bliss, joy", "confusion"],
+["recoil, akimbo", "drenched, thirst", "blown by cyclone", "push, pull", "snoop, listen", "crouched for attack", "hang, climb", "recoil, head/torso", "float, levitate", "swinging weapon", "twisting, stretching", "kicking, punching", "squeeze, tackle", "absorb, eat", "limp, injured", "curse, swear", "run, jump", "melt", "glow", "fire", "stuck, trapped", "pull, push", "shoot weapon", "dying, gaunt", "fly, swim", "shed, molting", "chant, recite", "punch, kick", "crawl, emerge"]];
+
+            function clicked() {
+                var animaPick = roll(anima.length);
+                var animaChart = anima[animaPick];
+                var setAnimaText = animaChart[roll(animaChart.length)];
+                var veggiePick = roll(veggie.length);
+                var veggieChart = veggie[veggiePick];
+                var setVeggieText = veggieChart[roll(veggieChart.length)];
+                var elementPick = roll(element.length);
+                var elementChart = element[elementPick];
+                var setElementText = elementChart[roll(elementChart.length)];
+                var technePick = roll(techne.length);
+                var techneChart = techne[technePick];
+                var setTechneText = techneChart[roll(techneChart.length)];
+
+                var emotChart = emotactlists[roll(emotactlists.length)];
+                //var setEmotText = emotChart[roll(emotChart.length)];
+                var setEmotText = emotactlists[0][roll(emotactlists[0].length)];
+                var setActionText = emotactlists[1][roll(emotactlists[1].length)];
+                //set text
+                document.getElementById("genText").innerHTML = 
+                "Anima: " + animaName[animaPick] + " [" + setAnimaText + 
+                "]<br \>Veggie: " + veggieName[veggiePick] + " [" + setVeggieText + 
+                "]<br \>Element: " + elementName[elementPick] + " [" + setElementText + 
+                "]<br \>Techne: " + techneName[technePick] + " [" + setTechneText + 
+                "]<br \><br \>Emotion: [" + setEmotText + 
+                "]<br \>Action: [" + setActionText + "]";
+            }
+            function roll(range) {
+                topRange = range;
+                rollResult = Math.floor(Math.random() * topRange);
+                return rollResult;
+            }
+        </script>
+        <style>
+            button {
+                padding: 4pt;
+                margin: 5pt;
+            }
+            body {
+                background-color: darkolivegreen;
+            }
+            h1 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Fantasy Genesis</h1>
+        <p>Click the button below to generate a drawing prompt</p1><br \><br \>
+        <button type="button" onclick="clicked()">click</button>
+        <p id="genText"></p>
+    </body>
+</html>
